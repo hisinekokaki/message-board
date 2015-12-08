@@ -30,7 +30,7 @@ def create
       flash.now[:alert] = "メッセージの保存に失敗しました。"
       render 'index'
     end
-  end
+end
 
   
   private
