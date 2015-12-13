@@ -4,6 +4,13 @@ class MessagesController < ApplicationController
   def edit
   end
   
+  
+  def index
+     # Messageを全て取得する
+     @messages = Message.all
+     @message = Message.new
+  end
+  
 def update
   if @message.update(message_params)
     #保存に成功した場合はトップページへリダイレクト
